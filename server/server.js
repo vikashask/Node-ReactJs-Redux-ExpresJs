@@ -64,7 +64,9 @@ app.get("/", (req, res) => res.json({
     message: "Welcome to our Demo"
 }));
 
-
+app.route("/book")
+    .get(book.getBooks)
+    .post(book.postBook);
 
 app.listen(port);
 console.log("Listening on port " + port);
