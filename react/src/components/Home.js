@@ -1,18 +1,18 @@
-import React from 'react';
+import React,{Component} from 'react';
 
-const Home = () => {
 
-    let imgStyle = {
-        marginTop: 50,
-        width: 500,
-        textAlign: 'center'
-    };
+class Home extends Component {
+    constructor(props){
+        super(props);
+    }
 
-    return(
-        <div>
-            Home
-        </div>
-    );
-};
+    render(){
+        return(
+            <div>
+                Home
+            </div>
+        );
+    }
+}
 
 export default Home;
