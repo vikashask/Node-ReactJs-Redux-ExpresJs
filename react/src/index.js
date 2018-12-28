@@ -7,8 +7,10 @@ import registerServiceWorker from './registerServiceWorker';
 import { Provider } from "react-redux";
 import configureStore from "./store/configureStore";
 
+let store = configureStore();
+
 ReactDOM.render(
-<Provider>
+<Provider store={store}>
     <App />
 </Provider>
 , document.getElementById('root'));
