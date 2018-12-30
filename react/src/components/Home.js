@@ -11,7 +11,7 @@ class Home extends Component {
 
     // load all data in store
     componentDidMount = () =>{
-        this.props.loadAllData({id:12,name:'viash'});
+        this.props.loadAllData({id:12,name:'vikask'});
     }
 
     render(){

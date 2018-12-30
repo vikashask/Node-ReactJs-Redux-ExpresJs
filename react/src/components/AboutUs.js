@@ -10,7 +10,7 @@ class AboutUs extends React.Component {
 
     // getting all data from store from home component
     componentDidMount = () =>{
-        console.log("-----",this.props.allData);
+        console.log("getting all data from store from home component---",this.props.allData);
         
     }
     
