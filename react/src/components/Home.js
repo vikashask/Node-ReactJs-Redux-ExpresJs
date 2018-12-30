@@ -9,6 +9,11 @@ class Home extends Component {
         super(props);
     }
 
+    // load all data in store
+    componentDidMount = () =>{
+        this.props.loadAllData({id:12,name:'viash'});
+    }
+
     render(){
         return(
             <div>
