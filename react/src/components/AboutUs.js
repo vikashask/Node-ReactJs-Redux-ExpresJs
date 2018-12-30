@@ -1,6 +1,19 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
-class AboutUs extends React.Component {
+
+class AboutUs extends React.Component { 
+    constructor(prpos){
+        super(prpos)
+    }
+
+    // getting all data from store from home component
+    componentDidMount = () =>{
+        console.log("-----",this.props.allData);
+        
+    }
+    
     render = () => {
         return(
             <div>
@@ -10,4 +23,10 @@ class AboutUs extends React.Component {
     }
 }
 
-export default AboutUs;
+const mapStateToProps = (state) =>{
+    return {
+        allData:state.allData
+    }
+};
+
+export default connect(mapStateToProps)(AboutUs);
