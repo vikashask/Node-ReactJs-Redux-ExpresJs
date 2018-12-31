@@ -3,8 +3,9 @@ import {Link} from "react-router-dom";
 import {Image} from "react-bootstrap";
 import logo from './../../../src/logo.svg';
 
-const Header = () => {
-
+// funcion component 
+// passing props
+const Header = (props) => {
     return (
         <header className='header'>
             <Link to={'/'}>
@@ -12,7 +13,7 @@ const Header = () => {
             </Link>
 
             <div className={'header-text'}>
-                React Router
+                {props.subtitle}
             </div>
 
         </header>

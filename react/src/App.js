@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Router>
           <div>
-              <Header/>
+              <Header subtitle="React Router"/>
               <Sidebar/>
               <div className={'rightContentContainer'}>
                     <div className="leftContentContainer">
