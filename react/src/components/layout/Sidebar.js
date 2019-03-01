@@ -5,6 +5,7 @@ const Sidebar = () => {
 
     const links = [
         {name: 'About Us', url: '/about-us'},
+        {name: 'contact-us', url: '/contact-us'},
         {name: '404 Error', url: '/404Error'},
 
     ];
@@ -21,7 +22,9 @@ const Sidebar = () => {
     return (
         <div className={'leftNavContainer'}>
             <ul>
-                <li className='nav'><NavLink className={'navLink'} activeClassName={'activeNavLink'} to='/' exact>Home</NavLink></li>
+                <li className='nav'>
+                    <NavLink className={'navLink'} activeClassName={'activeNavLink'} to='/' exact>Home</NavLink>
+                </li>
                 {linksComponents}
             </ul>
         </div>
